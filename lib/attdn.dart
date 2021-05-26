@@ -104,7 +104,10 @@ class _markAttendanceState extends State<markAttendance> {
                           });
                         }
                       });
+                      Firestore.instance.collection('users').document('harry@gmail.com').updateData(
+                          {'Status':result, 'Subject': 'Computer Network','longitude':longitude,'latitude':latitude});
                     },
+
 
 //                if(checkinput == userinput)
 //                  print('present');

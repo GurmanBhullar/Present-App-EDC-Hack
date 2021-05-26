@@ -72,16 +72,10 @@ class _ProfilePageState extends State<ProfilePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              buttonWidget("Follow "),
-              buttonWidget("Chat"),
+              buttonWidget("Time Table"),
+              buttonWidget("Logout"),
             ],
           ),
-          leftAlignText(
-              text: "Activities",
-              leftPadding: size.getWidthPx(16),
-              textColor: textPrimaryColor,
-              fontSize: 14.0),
-          PhotosList()
         ],
       )
     ]);
@@ -131,7 +125,7 @@ class _ProfilePageState extends State<ProfilePage> {
             maxRadius: size.getWidthPx(48),
             foregroundColor: colorCurve,
             backgroundImage: NetworkImage(
-                'https://avatars3.githubusercontent.com/u/17440971?s=400&u=b0d8df93a2e45812e577358cd66849e9d7cf0f90&v=4'),
+                'https://minervastrategies.com/wp-content/uploads/2016/03/default-avatar.jpg'),
           ),
         ),
       ),
@@ -141,14 +135,14 @@ class _ProfilePageState extends State<ProfilePage> {
   Column likeWidget() {
     return Column(
       children: <Widget>[
-        Text("102.5k",
+        Text("0",
             style: TextStyle(
                 fontFamily: "Exo2",
                 fontSize: 16.0,
                 color: textSecondary54,
                 fontWeight: FontWeight.w700)),
         SizedBox(height: size.getWidthPx(4)),
-        Text("Likes",
+        Text("Present",
             style: TextStyle(
                 fontFamily: "Exo2",
                 fontSize: 14.0,
@@ -161,14 +155,14 @@ class _ProfilePageState extends State<ProfilePage> {
   Column nameWidget() {
     return Column(
       children: <Widget>[
-        Text("Harsh Bhavsar",
+        Text("Harry",
             style: TextStyle(
                 fontFamily: "Exo2",
                 fontSize: 16.0,
                 color: colorCurve,
                 fontWeight: FontWeight.w700)),
         SizedBox(height: size.getWidthPx(4)),
-        Text("Photographer",
+        Text("Student",
             style: TextStyle(
                 fontFamily: "Exo2",
                 fontSize: 14.0,
@@ -181,14 +175,14 @@ class _ProfilePageState extends State<ProfilePage> {
   Column followersWidget() {
     return Column(
       children: <Widget>[
-        Text("58k",
+        Text("1",
             style: TextStyle(
                 fontFamily: "Exo2",
                 fontSize: 16.0,
                 color: textSecondary54,
                 fontWeight: FontWeight.w700)),
         SizedBox(height: size.getWidthPx(4)),
-        Text("Followers",
+        Text("Absent",
             style: TextStyle(
                 fontFamily: "Exo2",
                 fontSize: 14.0,

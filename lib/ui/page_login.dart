@@ -15,6 +15,8 @@ import 'page_search.dart';
 class LoginPage extends StatefulWidget {
 
 
+
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
@@ -32,6 +34,11 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+
+
+
+
+
     size = Screen(MediaQuery
         .of(context)
         .size);
@@ -242,12 +249,16 @@ class _LoginPageState extends State<LoginPage> {
       try {
         AuthResult user = await FirebaseAuth.instance
             .signInWithEmailAndPassword(email: _email, password: _password);
-        Firestore.instance.collection('users').document(_email).setData(
-            {'Name': _email, 'Subject': '',});
+        Firestore.instance.collection('users').document('harry@gmail.com').setData(
+            {'Name': _email, 'Subject': 'Computer Network',});
 
 
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => HomePage()));
+
+            Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                    new HomePage()));
       }catch(e){
         Fluttertoast.showToast(msg: "Wrong Login Credentials",
             toastLength: Toast.LENGTH_LONG,

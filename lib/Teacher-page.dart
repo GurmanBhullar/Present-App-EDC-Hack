@@ -6,6 +6,7 @@ import 'package:flutter_ui_collections/widgets/widgets.dart';
 import 'package:flutter_ui_collections/firebase.dart';
 import './ui/page_login.dart';
 import 'package:flutter_ui_collections/takeAttd.dart';
+import './firebase2.dart';
 
 class teacherPage extends StatefulWidget {
   @override
@@ -169,6 +170,23 @@ class _teacherPageState extends State<teacherPage> {
 //
 //              ],
 //            )
+            RaisedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Firebase2()));
+                print("Hello");
+              },
+              elevation: 8.0,
+              shape: RoundedRectangleBorder(
+                  borderRadius: new BorderRadius.circular(30.0)),
+              padding: EdgeInsets.all(size.getWidthPx(12)),
+              child: Text(
+                "Show Attendance Record",
+                style: TextStyle(
+                    fontFamily: 'Exo2', color: Colors.white, fontSize: 15.0),
+              ),
+              color: Color.fromRGBO(97, 10, 165, 0.8),
+            ),
           ],
         ),
       ],

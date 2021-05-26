@@ -8,6 +8,15 @@ import 'package:flutter_ui_collections/firebase.dart';
 import 'package:flutter_ui_collections/attdn.dart';
 
 class SearchPage extends StatefulWidget {
+
+
+  final String text;
+  SearchPage({Key key, @required this.text}) : super(key: key);
+
+
+
+
+
   @override
   _SearchPageState createState() => _SearchPageState();
 }
@@ -20,9 +29,7 @@ class _SearchPageState extends State<SearchPage> {
   var citiesList = [
     "Operating System",
     "DMS",
-    "Numerical Analysis",
-    "Mathematics",
-    "Material Science",
+
   ];
 
   @override
@@ -149,22 +156,22 @@ class _SearchPageState extends State<SearchPage> {
 //              ],
 //            )
             RaisedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Firebase()));
-                print("Hello");
-              },
-              elevation: 8.0,
-              shape: RoundedRectangleBorder(
-                  borderRadius: new BorderRadius.circular(30.0)),
-              padding: EdgeInsets.all(size.getWidthPx(12)),
-              child: Text(
-                "Show Time Table",
-                style: TextStyle(
-                    fontFamily: 'Exo2', color: Colors.white, fontSize: 15.0),
-              ),
-              color: Color.fromRGBO(97, 10, 165, 0.8),
-            )
+            onPressed: () {
+    Navigator.push(context,
+    MaterialPageRoute(builder: (context) => Firebase()));
+    print("Hello");
+    },
+    elevation: 8.0,
+    shape: RoundedRectangleBorder(
+    borderRadius: new BorderRadius.circular(30.0)),
+    padding: EdgeInsets.all(size.getWidthPx(12)),
+    child: Text(
+    "Show Time Table",
+    style: TextStyle(
+    fontFamily: 'Exo2', color: Colors.white, fontSize: 15.0),
+    ),
+    color: Color.fromRGBO(97, 10, 165, 0.8),
+    )
           ],
         ),
       ],
