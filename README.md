@@ -1,56 +1,43 @@
-# flutter_ui_collections
+# Present Application in Flutter (Startup Punjab Hackathon)
+## Features
+* A Cross platform application developed in Flutter Framework to manage the timetable, student records, attendance of the students.
+* Highlighting feature of the App is the automatic attendace system to reduce the time taken for attendance uoto 90%.
+* This is done by generating a random session ID by the teacher, This session ID, which is valid for a partiular time (like 15 seconds) is communicated to the  students.
+* Students enter the session ID and present is marks after session ID is matched.
+* Manual attendance system is also possible, where teacher can mark present in case of technical issues.
+* The class schedule is displayed resulting in ease of acadamic management.
+* Students can view their profile and can see the attandace status as well.
+* Seperate Login pages for the student and teacher in the same application with forgot password option.
+
+### Safe and Secure attendance
+To reduce the chance of Proxies and false attendance, following features were added:
+* The session ID is valid for a small time period. (e.g 15 seconds)
+* The geo-location is also stored using google geolocator API and matched with the location of teacher.
 
 
-## Screenshots
-| Splash | Onboarding | Login | Sign Up
-|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------
-|<img src="screenshots/page_splash.jpg" height="400em" /> | <img src="screenshots/onboarding.gif" height="400em" /> | <img src="screenshots/page_login.jpg" height="400em" /> | <img src="screenshots/page_signup.jpg" height="400em"/>
+## Technologies used
+* Flutter
+* Dart
+* Firebase
 
-| Forgot Password | Dashboard | Profile | Setting
-|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------
-|<img src="screenshots/page_forgot_password.jpg" height="400em" /> |<img src="screenshots/page_dashboard.jpg" height="400em" /> | <img src="screenshots/page_profile.jpg" height="400em" />|<img src="screenshots/page_settings.jpg" height="400em" />
-
+## Results:
+Achievind 1st position in the Starup Punjab Hackathon.
 
 
-# Show some :heart: and star the repo to support the project.
+## Screenshots of the application
+![image](https://user-images.githubusercontent.com/40751910/119785020-70440f80-beec-11eb-861d-621ed0f8ac60.png)
+![image](https://user-images.githubusercontent.com/40751910/119785054-7934e100-beec-11eb-9931-dca030f08511.png)
+![image](https://user-images.githubusercontent.com/40751910/119785071-7df99500-beec-11eb-89b8-46ac56128d1e.png)
+![image](https://user-images.githubusercontent.com/40751910/119785877-450df000-beed-11eb-951a-201207d7dc88.png)
+![image](https://user-images.githubusercontent.com/40751910/119785892-4808e080-beed-11eb-8059-af6da5bdc78f.png)
+![image](https://user-images.githubusercontent.com/40751910/119785911-4c34fe00-beed-11eb-8ed5-e17aabf1f8a8.png)
+![image](https://user-images.githubusercontent.com/40751910/119785930-50611b80-beed-11eb-8b19-ee9e372d72c1.png)
+![image](https://user-images.githubusercontent.com/40751910/119785955-548d3900-beed-11eb-8a36-d9cb32e16360.png)
+![image](https://user-images.githubusercontent.com/40751910/119785973-57882980-beed-11eb-93e1-f1978a0d18d4.png)
+![image](https://user-images.githubusercontent.com/40751910/119785991-5bb44700-beed-11eb-8667-094feef0dee4.png)
+![image](https://user-images.githubusercontent.com/40751910/119786016-6078fb00-beed-11eb-8f97-00d0d2e5a426.png)
+![image](https://user-images.githubusercontent.com/40751910/119786032-640c8200-beed-11eb-90f3-0e0fb0e85a62.png)
 
-## Contribute
-1. Fork the the project
-2. Create your feature branch (git checkout -b my-new-feature)
-3. Make required changes and commit (git commit -am 'Add some feature')
-4. Push to the branch (git push origin my-new-feature)
-5. Create new Pull Request
-
-
-## Created By
-
-[Harsh Bhavsar](https://github.com/iharshb) ([@harshu_719](https://www.twitter.com/harshu_719)) 
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
-
-
-### The MIT License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
-`Copyright (c) 2019 Harsh Bhavsar`
-
-`Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions: `
-
-`The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software. `
-
-`THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. `
 
 
 
